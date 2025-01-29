@@ -36,7 +36,8 @@ class MyApp extends StatelessWidget {
           //       );
           //   },
           // ),
-          child: PaddedText(),
+          // child: PaddedText(),
+          child: CounterWidget(),
         ),
       ),
      );
@@ -54,4 +55,31 @@ class PaddedText extends StatelessWidget {
       child: const Text('Hello, World!'),
     );
   }
+}
+
+
+class CounterWidget extends StatefulWidget {
+   
+    State<CounterWidget> createState() => _CounterWidgetState();
+
+}
+
+class _CounterWidgetState extends State<CounterWidget> {
+    int _Counter = 0;
+
+    void increment(){
+        setState(() {
+            _Counter++;
+        });
+    }
+
+    @override
+    Widget build(BuildContext context){
+        return ElevatedButton(
+          onPressed: (){
+              increment();
+        }, 
+        child: Text('$_Counter'),
+        );
+    }
 }
