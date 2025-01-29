@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(const PaddedText());
 }
 
 class MyApp extends StatelessWidget {
@@ -27,7 +27,8 @@ class MyApp extends StatelessWidget {
                     const SizedBox(height: 12, width: 45,),
                     ElevatedButton(
                       onPressed: (){
-                      print("Heleo");
+                      // ignore: avoid_print
+                      // print("Heleo");
                     }, 
                     child: Text("Button A"),
                     )
@@ -39,5 +40,17 @@ class MyApp extends StatelessWidget {
       ),
      );
   }
+}
 
+
+class PaddedText extends StatelessWidget {
+  const PaddedText({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: const EdgeInsets.all(8.0),
+      child: const Text('Hello, World!'),
+    );
+  }
 }
