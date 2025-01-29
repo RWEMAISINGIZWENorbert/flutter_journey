@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(const PaddedText());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -19,23 +19,24 @@ class MyApp extends StatelessWidget {
           backgroundColor: Colors.green,
         ),
         body: Center(
-          child: Builder(
-            builder: (context){
-                return Column(
-                  children: [
-                    const Text("The colum 1"),
-                    const SizedBox(height: 12, width: 45,),
-                    ElevatedButton(
-                      onPressed: (){
-                      // ignore: avoid_print
-                      // print("Heleo");
-                    }, 
-                    child: Text("Button A"),
-                    )
-                  ],
-                );
-            },
-          ),
+          // child: Builder(
+          //   builder: (context){
+          //       return Column(
+          //         children: [
+          //           const Text("The colum 1"),
+          //           const SizedBox(height: 12, width: 45,),
+          //           ElevatedButton(
+          //             onPressed: (){
+          //             // ignore: avoid_print
+          //             // print("Heleo");
+          //           }, 
+          //           child: Text("Button A"),
+          //           )
+          //         ],
+          //       );
+          //   },
+          // ),
+          child: PaddedText(),
         ),
       ),
      );
