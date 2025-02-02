@@ -61,39 +61,78 @@ void main(){
 class MyApp extends StatelessWidget {
    const MyApp({super.key});
 
-   @override
-   Widget build(BuildContext context){
-       return MaterialApp(
-        debugShowCheckedModeBanner: false,
-         home: Scaffold(
-          backgroundColor: Colors.amber[100],
-          appBar: AppBar(
-            title: Text(
-              "List View widget",
-            style: TextStyle(
-              color: Colors.white
-              ),
-              ),
-            centerTitle: true,
-            elevation: 0,
-            backgroundColor: Colors.blue,
-          ),
-          body: Container(
-          height: 200,
-          child: ListView(
+  //  @override
+//    Widget build(BuildContext context){
+//        return MaterialApp(
+//         debugShowCheckedModeBanner: false,
+//          home: Scaffold(
+//           backgroundColor: Colors.amber[100],
+//           appBar: AppBar(
+//             title: Text(
+//               "List View widget",
+//             style: TextStyle(
+//               color: Colors.white
+//               ),
+//               ),
+//             centerTitle: true,
+//             elevation: 0,
+//             backgroundColor: Colors.blue,
+//           ),
+//           body: Container(
+//           height: 200,
+//           child: ListView(
+//             scrollDirection: Axis.horizontal,
+//             children: [
+//               // ContainerWidget(),
+//             ],
+//           ),
+//           )
+//           ),
+//          );
+//       //  );
+//    }
+ 
+ @override
+ Widget build(BuildContext context){
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+       home: Scaffold(
+        backgroundColor: Colors.white,
+         appBar: AppBar(
+               elevation: 0.2,
+              backgroundColor: Colors.white,
+              title: Text("The ListView.Build title", style: TextStyle(color: Colors.black, fontSize: 20),),
+              centerTitle: true,
+         ),
+          body:ListView.builder(
             scrollDirection: Axis.horizontal,
-            children: [
-              ContainerWidget(),
-              ContainerWidget(),
-              ContainerWidget(),
-              ContainerWidget(),
-            ],
-          ),
-          )
-          ),
-         );
-      //  );
-   }
+            itemCount:13 ,
+            itemBuilder: (context, index) {
+               return  Container(
+              height: 240,
+              child:   Card(
+                color: Colors.amber[400],
+                elevation: 0,
+                child: ListTile(
+                  title: Text("The titl 1"),
+                  subtitle: Text("The sub title 1"),
+                  trailing: CircleAvatar(
+                    backgroundColor: Colors.amber[900],
+                    child: Icon(Icons.arrow_circle_left_outlined, color: Colors.white),
+                  ),
+                  leading: CircleAvatar(
+                     backgroundColor: Colors.amber[200],
+                    child: Text("$index", style: TextStyle(fontSize: 24, color: Colors.grey[900]),),
+                  ),
+                ),
+               );
+          );
+          }),
+       ),
+    ) ; 
+ } 
+
+
 }
 
 class ContainerWidget extends StatelessWidget {
