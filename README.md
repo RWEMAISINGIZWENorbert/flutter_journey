@@ -1,4 +1,4 @@
-# flutter_journey
+## flutter_journey
 
 A new Flutter project.
 
