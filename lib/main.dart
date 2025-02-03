@@ -55,42 +55,42 @@ import 'package:flutter/material.dart';
 // }
 
 void main(){
-   runApp(const MyApp());
+   runApp(const MyApp1());
 }
 
 class MyApp extends StatelessWidget {
    const MyApp({super.key});
 
   //  @override
-//    Widget build(BuildContext context){
-//        return MaterialApp(
-//         debugShowCheckedModeBanner: false,
-//          home: Scaffold(
-//           backgroundColor: Colors.amber[100],
-//           appBar: AppBar(
-//             title: Text(
-//               "List View widget",
-//             style: TextStyle(
-//               color: Colors.white
-//               ),
-//               ),
-//             centerTitle: true,
-//             elevation: 0,
-//             backgroundColor: Colors.blue,
-//           ),
-//           body: Container(
-//           height: 200,
-//           child: ListView(
-//             scrollDirection: Axis.horizontal,
-//             children: [
-//               // ContainerWidget(),
-//             ],
-//           ),
-//           )
-//           ),
-//          );
-//       //  );
-//    }
+ //    Widget build(BuildContext context){
+ //        return MaterialApp(
+ //         debugShowCheckedModeBanner: false,
+ //          home: Scaffold(
+ //           backgroundColor: Colors.amber[100],
+ //           appBar: AppBar(
+ //             title: Text(
+ //               "List View widget",
+ //             style: TextStyle(
+ //               color: Colors.white
+ //               ),
+ //               ),
+ //             centerTitle: true,
+ //             elevation: 0,
+ //             backgroundColor: Colors.blue,
+ //           ),
+ //           body: Container(
+ //           height: 200,
+ //           child: ListView(
+ //             scrollDirection: Axis.horizontal,
+ //             children: [
+ //               // ContainerWidget(),
+ //             ],
+ //           ),
+ //           )
+ //           ),
+ //          );
+ //       //  );
+ //    }
  
  @override
  Widget build(BuildContext context){
@@ -125,14 +125,12 @@ class MyApp extends StatelessWidget {
                     child: Text("$index", style: TextStyle(fontSize: 24, color: Colors.grey[900]),),
                   ),
                 ),
-               );
+               ),
           );
           }),
        ),
     ) ; 
  } 
-
-
 }
 
 class ContainerWidget extends StatelessWidget {
@@ -176,5 +174,126 @@ class ContainerWidget extends StatelessWidget {
          ),
       ),
     );
+  }
+}
+
+
+class MyApp1 extends StatelessWidget {
+  const MyApp1({super.key});
+
+  @override
+  Widget build(BuildContext context){
+     return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: Scaffold(
+        backgroundColor: Colors.purple[200],
+        appBar: AppBar(
+          backgroundColor: Colors.purple[800],
+          title: Text("Gallery app", 
+          style: TextStyle(
+            color: Colors.white,
+            fontSize: 14,
+            fontWeight: FontWeight.w800
+            ),
+             ),
+          centerTitle: true,
+          elevation: 0,
+          leading: Container(
+            width: 24,
+            height: 24,
+            margin: EdgeInsets.all(10),
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(8),
+              color: Colors.purple[300],
+            ),
+            child: Icon(Icons.menu, color:Colors.white, size: 24,),
+          ),
+          actions: [
+            Container(
+            width: 36,
+            height: 36,
+            margin: EdgeInsets.all(10),
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(8),
+              color: Colors.purple[300],
+            ),
+            child: Icon(Icons.arrow_circle_left, color:Colors.white, size: 24,),
+          )
+          ],
+        ),
+        body: Container(
+          margin: EdgeInsets.only(left: 8),  
+        child:  Column(
+          // mainAxisAlignment: MainAxisAlignment.start,
+          crossAxisAlignment: CrossAxisAlignment.end,
+          children: [
+            Row(
+              children: [
+                 Column(
+                    children: [
+                      Image.asset('im/code.jpg',
+                      width: 160,
+                      height: 200,
+                      ),
+                    ],
+                 ),
+                 SizedBox(width: 10,),
+                 Column(
+                    children: [
+                      Image.asset('im/code1.jpg',
+                      width: 160,
+                      height: 200,
+                      ),
+                    ],
+                 ),
+              ],
+            ),
+            Row(
+              children: [
+                 Column(
+                    children: [
+                      Image.asset('im/20.jpg',
+                      width: 160,
+                      height: 200,
+                      ),
+                    ],
+                 ),
+                 SizedBox(width: 10,),
+                 Column(
+                    children: [
+                      Image.asset('im/unnamed.jpg',
+                      width: 160,
+                      height: 200,
+                      ),
+                    ],
+                 ),
+              ],
+            ),
+            Row(
+              children: [
+                 Column(
+                    children: [
+                      Image.asset('im/unnamed.png',
+                      width: 160,
+                      height: 200,
+                      ),
+                    ],
+                 ),
+                 SizedBox(width: 10,),
+                 Column(
+                    children: [
+                      Image.asset('im/code1.jpg',
+                      width: 160,
+                      height: 200,
+                      ),
+                    ],
+                 ),
+              ],
+            ),
+          ],
+        ),
+      ),
+      ),
+     );
   }
 }
