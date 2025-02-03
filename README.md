@@ -1,5 +1,4 @@
 # flutter_journey
- `sh`
 
 A new Flutter project.
 
