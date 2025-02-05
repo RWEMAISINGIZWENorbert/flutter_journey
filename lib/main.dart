@@ -55,7 +55,7 @@ import 'package:flutter/material.dart';
 // }
 
 void main(){
-   runApp(const MyApp1());
+   runApp(const GalleryApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -178,8 +178,8 @@ class ContainerWidget extends StatelessWidget {
 }
 
 
-class MyApp1 extends StatelessWidget {
-  const MyApp1({super.key});
+class GalleryApp extends StatelessWidget {
+  const GalleryApp({super.key});
 
   @override
   Widget build(BuildContext context){
