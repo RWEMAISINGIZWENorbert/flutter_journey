@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_journey/navigationWidgets/widgets.dart';
 
 // void main() {
 //   runApp(
@@ -55,7 +56,8 @@ import 'package:flutter/material.dart';
 // }
 
 void main(){
-   runApp(const GalleryApp());
+  //  runApp(const GalleryApp());
+  runApp(const CustomAppBar());
 }
 
 class MyApp extends StatelessWidget {
