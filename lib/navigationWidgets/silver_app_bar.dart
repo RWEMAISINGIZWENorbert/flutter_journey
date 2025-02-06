@@ -10,18 +10,19 @@ class SilverAppBar extends StatelessWidget {
       debugShowCheckedModeBanner: false,
        home:  Scaffold(
           body: CustomScrollView(
-            scrollDirection: Axis.vertical,
               slivers: [
                 SliverAppBar(
-                   title: Text(
-                    "Sliver App Bar",
-                     style: TextStyle(
-                      color: Colors.white,
-                     ),
+                    backgroundColor: Colors.deepPurple,
+                    floating: true,
+                    expandedHeight: 400,
+                    flexibleSpace: FlexibleSpaceBar(
+                      background: Container(
+                        color: Colors.amber,
+                      ),
+                      title: Text("The Sliver Space App Bar"),
                     ),
-                    backgroundColor: Colors.deepPurple
                 ),
-
+  
                 SliverToBoxAdapter(
                   child: Padding(
                     padding: EdgeInsets.all(10.0),
@@ -29,7 +30,7 @@ class SilverAppBar extends StatelessWidget {
                       borderRadius: BorderRadius.circular(8.0),
                       child: Container(
                         color: Colors.deepPurple[300],
-                        width: 400,
+                        height: 400,
                       ),
                     ),
                   ),
@@ -41,7 +42,7 @@ class SilverAppBar extends StatelessWidget {
                       borderRadius: BorderRadius.circular(8.0),
                       child: Container(
                         color: Colors.deepPurple[300],
-                        width: 400,
+                        height: 400,
                       ),
                     ),
                   ),
@@ -53,7 +54,7 @@ class SilverAppBar extends StatelessWidget {
                       borderRadius: BorderRadius.circular(8.0),
                       child: Container(
                         color: Colors.deepPurple[300],
-                        width: 400,
+                        height: 400,
                       ),
                     ),
                   ),
@@ -65,7 +66,7 @@ class SilverAppBar extends StatelessWidget {
                       borderRadius: BorderRadius.circular(8.0),
                       child: Container(
                         color: Colors.deepPurple[300],
-                        width: 400,
+                        height: 400,
                       ),
                     ),
                   ),
@@ -77,7 +78,7 @@ class SilverAppBar extends StatelessWidget {
                       borderRadius: BorderRadius.circular(8.0),
                       child: Container(
                         color: Colors.deepPurple[300],
-                        width: 400,
+                        height: 400,
                       ),
                     ),
                   ),
