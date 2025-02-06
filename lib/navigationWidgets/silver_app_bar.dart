@@ -1,5 +1,6 @@
 
 import 'package:flutter/material.dart';
+import 'package:flutter_journey/navigationWidgets/drawer_widget.dart';
 
 class SilverAppBar extends StatelessWidget {
   const SilverAppBar({super.key});
@@ -22,7 +23,7 @@ class SilverAppBar extends StatelessWidget {
                       title: Text("The Sliver Space App Bar"),
                     ),
                 ),
-  
+
                 SliverToBoxAdapter(
                   child: Padding(
                     padding: EdgeInsets.all(10.0),
@@ -85,6 +86,7 @@ class SilverAppBar extends StatelessWidget {
                 ),
               ],
           ),
+          drawer: DrawerWidget(),
         ),
      );
     }
