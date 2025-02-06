@@ -23,7 +23,6 @@ class SilverAppBar extends StatelessWidget {
                       title: Text("The Sliver Space App Bar"),
                     ),
                 ),
-
                 SliverToBoxAdapter(
                   child: Padding(
                     padding: EdgeInsets.all(10.0),

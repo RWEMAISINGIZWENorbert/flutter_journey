@@ -20,6 +20,7 @@ class DrawerWidget extends StatelessWidget {
               ),
               leading: Icon(Icons.home),
             ),
+            const Divider(color: Colors.black54),
             ListTile(
               title: Text('Home', style: TextStyle(
                 color: Colors.black,
