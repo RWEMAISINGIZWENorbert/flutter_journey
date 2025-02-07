@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_journey/navigationWidgets/bottom_nav.dart';
 import 'package:flutter_journey/navigationWidgets/silver_app_bar.dart';
 // import 'package:flutter_journey/navigationWidgets/widgets.dart';
 
@@ -59,7 +60,8 @@ import 'package:flutter_journey/navigationWidgets/silver_app_bar.dart';
 void main(){
   //  runApp(const GalleryApp());
   // runApp(const CustomAppBar());
-  runApp(const SilverAppBar());
+  // runApp(const SilverAppBar());
+  runApp(const BottomNav());
 }
 
 class MyApp extends StatelessWidget {
