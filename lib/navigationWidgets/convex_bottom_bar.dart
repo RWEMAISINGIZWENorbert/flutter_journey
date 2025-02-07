@@ -9,20 +9,24 @@ class ConvexBottomBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
+        backgroundColor: Colors.black,
         appBar: AppBar(
+          backgroundColor: Colors.black,
           title: Text("The convex Bottom Bar", 
           style: TextStyle(
-            fontSize: 14
+            fontSize: 14,
+            color: Colors.white
           ),
           ),
           centerTitle: true,
-          leading: Icon(Icons.menu),
+          leading: Icon(Icons.menu, color: Colors.green[900],),
         ),
         bottomNavigationBar: ConvexAppBar(
-          backgroundColor: Colors.green[900],
-          color: Colors.white,
-          activeColor: Colors.grey[200],
+          backgroundColor: Colors.black,
+          color: Colors.green[900],
+          activeColor: Colors.green[600],
           items: [
             TabItem(icon: Icons.home, title: 'Home'),
             TabItem(icon: Icons.analytics, title: 'Analytics'),

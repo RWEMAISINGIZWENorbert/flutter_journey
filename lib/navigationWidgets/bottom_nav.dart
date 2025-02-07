@@ -1,5 +1,6 @@
 
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
 class BottomNav extends StatelessWidget {
   const BottomNav({super.key});
@@ -8,7 +9,7 @@ class BottomNav extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      color: Colors.black45,
+      color: Colors.black12,
       home: Scaffold(
          bottomNavigationBar: NavigationBar(
           elevation: 0,
@@ -27,6 +28,7 @@ class BottomNav extends StatelessWidget {
     );
   }
 }
+
 
 // class NavigationController extends GetxController {
 //   final Rx<int> = 0.abs;
