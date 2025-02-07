@@ -8,6 +8,7 @@ class BottomNav extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
+      color: Colors.black45,
       home: Scaffold(
          bottomNavigationBar: NavigationBar(
           elevation: 0,
@@ -17,7 +18,7 @@ class BottomNav extends StatelessWidget {
             NavigationDestination(icon: Icon(Icons.home), label: 'Home'),
             NavigationDestination(icon: Icon(Icons.analytics), label: 'Analytics'),
             NavigationDestination(icon: Icon(Icons.report_sharp), label: 'Reports'),
-            NavigationDestination(icon: Icon(Icons.move_down), label: 'Invices'),
+            NavigationDestination(icon: Icon(Icons.move_down), label: 'Invoices'),
           ],
           ),
           body: Container(),
