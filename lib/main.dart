@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_journey/navigationWidgets/bottom_nav.dart';
+import 'package:flutter_journey/navigationWidgets/bottom_nav_block.dart';
 import 'package:flutter_journey/navigationWidgets/convex_bottom_bar.dart';
 import 'package:flutter_journey/navigationWidgets/silver_app_bar.dart';
 // import 'package:flutter_journey/navigationWidgets/widgets.dart';
@@ -63,7 +64,8 @@ void main(){
   // runApp(const CustomAppBar());
   // runApp(const SilverAppBar());
   // runApp(const BottomNav());
-  runApp(const ConvexBottomBar());
+  // runApp(const ConvexBottomBar());
+  runApp(const BottomNavBlock());
 }
 
 class MyApp extends StatelessWidget {
@@ -199,7 +201,6 @@ class _MyWidgetState extends State<MyWidget> {
     return const Placeholder();
   }
 }
-
 
 class GalleryApp extends StatelessWidget {
   const GalleryApp({super.key});
