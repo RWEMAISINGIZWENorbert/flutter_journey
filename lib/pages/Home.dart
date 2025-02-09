@@ -63,7 +63,7 @@ class Home extends StatelessWidget {
                         Row(
                           mainAxisAlignment: MainAxisAlignment.spaceAround,
                           children: [
-                             Text('rinSync', style: GoogleFonts.aBeeZee(
+                             Text('rinsync', style: GoogleFonts.aBeeZee(
                               color: Colors.white,
                               fontSize: 36,
                               fontWeight: FontWeight.w900
@@ -91,7 +91,7 @@ class Home extends StatelessWidget {
                             children: [
                               Text('The Net Profit', style: GoogleFonts.aBeeZee(
                                 backgroundColor: Colors.transparent,
-                                color: Colors.white,
+                                color: const Color.fromARGB(255, 51, 114, 53),
                                 fontSize: 20,
                                 fontWeight: FontWeight.w600
                               ),
