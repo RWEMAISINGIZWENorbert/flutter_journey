@@ -66,8 +66,8 @@ void main(){
   // runApp(const SilverAppBar());
   // runApp(const BottomNav());
   // runApp(const ConvexBottomBar());
-  runApp(const BottomNavBlock());
-  // runApp(const Home());
+  // runApp(const BottomNavBlock());
+  runApp(const Home());
 }
 
 class MyApp extends StatelessWidget {
