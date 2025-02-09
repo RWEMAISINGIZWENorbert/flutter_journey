@@ -13,6 +13,7 @@ class Home extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
+        backgroundColor: Colors.white,
         // appBar: AppBar(
         //   elevation: 0,
         //   backgroundColor: const Color.fromARGB(255, 1, 51, 3), 
@@ -53,7 +54,7 @@ class Home extends StatelessWidget {
           child: Column(
               children: [
                 Container(
-                  height: 300,
+                  height: 240,
                   color: const Color.fromARGB(255, 1, 51, 3),
                   child: Container(
                     margin: EdgeInsets.only(top: 46),
@@ -219,7 +220,82 @@ class Home extends StatelessWidget {
           ),
        ),
        bottomNavigationBar: BottomAppBar(
-        
+          color: Colors.transparent,
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              Container(
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    Icon(IconlyBold.home, color: const Color.fromARGB(255, 1, 51, 3)),
+                    Text("Home", style: GoogleFonts.aBeeZee(
+                        color: const Color.fromARGB(255, 1, 51, 3),
+                        fontSize: 11,
+                        fontWeight: FontWeight.w600
+                    ),
+                    ),
+                  ],
+                ),
+              ),
+              Container(
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    Icon(IconlyLight.chat, color: Colors.black),
+                    Text("Analytics", style: GoogleFonts.aBeeZee(
+                        color: Colors.black,
+                        fontSize: 11,
+                        fontWeight: FontWeight.w600
+                    ),
+                    ),
+                  ],
+                ),
+              ),
+              Container(
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    Icon(IconlyLight.chat, color: Colors.black),
+                    Text("Analytics", style: GoogleFonts.aBeeZee(
+                        color: Colors.black,
+                        fontSize: 11,
+                        fontWeight: FontWeight.w600
+                    ),
+                    ),
+                  ],
+                ),
+              ),
+              Container(
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    Icon(IconlyLight.chat, color: Colors.black),
+                    Text("Analytics", style: GoogleFonts.aBeeZee(
+                        color: Colors.black,
+                        fontSize: 11,
+                        fontWeight: FontWeight.w600
+                    ),
+                    ),
+                  ],
+                ),
+              ),
+              Container(
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    Icon(IconlyLight.chat, color: Colors.black),
+                    Text("Analytics", style: GoogleFonts.aBeeZee(
+                        color: Colors.black,
+                        fontSize: 11,
+                        fontWeight: FontWeight.w600
+                    ),
+                    ),
+                  ],
+                ),
+              ),
+            ],
+          ),
        ),
       ),
     );
