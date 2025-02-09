@@ -113,8 +113,14 @@ class MyApp extends StatelessWidget {
          appBar: AppBar(
                elevation: 0.2,
               backgroundColor: Colors.white,
-              title: Text("The ListView.Build title", style: TextStyle(color: Colors.black, fontSize: 20),),
-              centerTitle: true,
+              title: Text(
+                "The ListView.Build title",
+                style: TextStyle(
+                  color: Colors.black, 
+                  fontSize: 20
+                  ),
+                  ),
+               centerTitle: true,
          ),
           body:ListView.builder(
             scrollDirection: Axis.horizontal,
@@ -232,7 +238,11 @@ class GalleryApp extends StatelessWidget {
               borderRadius: BorderRadius.circular(8),
               color: Colors.purple[300],
             ),
-            child: Icon(Icons.menu, color:Colors.white, size: 24,),
+            child: Icon(
+              Icons.menu, 
+              color:Colors.white, 
+              size: 24
+              ),
           ),
           actions: [
             Container(

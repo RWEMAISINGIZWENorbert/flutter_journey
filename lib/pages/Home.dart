@@ -54,7 +54,7 @@ class Home extends StatelessWidget {
           child: Column(
               children: [
                 Container(
-                  height: 240,
+                  height: 350,
                   color: const Color.fromARGB(255, 1, 51, 3),
                   child: Container(
                     margin: EdgeInsets.only(top: 46),
@@ -65,6 +65,7 @@ class Home extends StatelessWidget {
                           children: [
                              Text('rinsync', style: GoogleFonts.aBeeZee(
                               color: Colors.white,
+                          
                               fontSize: 36,
                               fontWeight: FontWeight.w900
                              ),
@@ -73,14 +74,25 @@ class Home extends StatelessWidget {
                               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                                children: [
                                 Container(
-                                  padding: EdgeInsets.all(8.0),
+                                  padding: EdgeInsets.all(4.0),
                                   decoration: BoxDecoration(
-                                    borderRadius: BorderRadius.circular(8.0),
+                                    borderRadius: BorderRadius.circular(24.0),
                                     color: Colors.white,
                                   ),
                                   child: Icon(IconlyLight.notification),
                                 ),
-                                Icon(Icons.person, color: Colors.white, size: 36,)
+                                const SizedBox(width: 10),
+                                CircleAvatar(
+                                    backgroundColor: Colors.transparent,
+                                    child: ClipOval(
+                                      child: Image.asset(
+                                        './assets/images/im.jpg', 
+                                        fit:BoxFit.cover, 
+                                        height: 50.0, 
+                                       width: 50.0
+                                      ),
+                                    ),
+                                ),
                                ],
                              ),
                           ],
@@ -110,11 +122,15 @@ class Home extends StatelessWidget {
                     ),
                   ),  
                 ),
-                const SizedBox(height: 4),
+                const SizedBox(height: 14),
                  Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text('Quick Actions'),
+                        Text('Quick Actions', style: GoogleFonts.aBeeZee(
+                            fontSize: 20,
+                            fontWeight: FontWeight.w600
+                        ),
+                        ),
                         const SizedBox(height: 5),
                         Row(
                           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -125,7 +141,14 @@ class Home extends StatelessWidget {
                                   backgroundColor: const Color.fromARGB(255, 1, 51, 3),
                                   child: Icon(Icons.add, color: Colors.white,),
                                 ),
-                                Text('Add Products'),
+                                const SizedBox(height: 5),
+                                Text(
+                                'Add',
+                                style: GoogleFonts.aBeeZee(
+                                 fontSize: 13,
+                                fontWeight: FontWeight.w600
+                                    ),
+                                 ),
                               ],
                             ),
                             Column(
@@ -134,7 +157,14 @@ class Home extends StatelessWidget {
                                   backgroundColor: const Color.fromARGB(255, 1, 51, 3),
                                   child: Icon(Icons.add, color: Colors.white,),
                                 ),
-                                Text('Add Products'),
+                                const SizedBox(height: 5),
+                                Text(
+                                'Add',
+                                style: GoogleFonts.aBeeZee(
+                                 fontSize: 13,
+                                fontWeight: FontWeight.w600
+                                    ),
+                                 ),
                               ],
                             ),
                             Column(
@@ -143,20 +173,56 @@ class Home extends StatelessWidget {
                                   backgroundColor: const Color.fromARGB(255, 1, 51, 3),
                                   child: Icon(Icons.add, color: Colors.white,),
                                 ),
-                                Text('Add Products'),
+                                const SizedBox(height: 5),
+                                Text(
+                                'Add',
+                                style: GoogleFonts.aBeeZee(
+                                 fontSize: 13,
+                                fontWeight: FontWeight.w600
+                                    ),
+                                 ),
+                              ],
+                            ),
+                            Column(
+                              children: [
+                                CircleAvatar(
+                                  backgroundColor: const Color.fromARGB(255, 1, 51, 3),
+                                  child: Icon(Icons.add, color: Colors.white,),
+                                ),
+                                const SizedBox(height: 5),
+                                Text('Add', style: GoogleFonts.aBeeZee(
+                            fontSize: 13,
+                            fontWeight: FontWeight.w600
+                        ),),
+                              ],
+                            ),
+                            Column(
+                              children: [
+                                CircleAvatar(
+                                  backgroundColor: const Color.fromARGB(255, 1, 51, 3),
+                                  child: Icon(Icons.add, color: Colors.white,),
+                                ),
+                                const SizedBox(height: 5),
+                                Text('Add', style: GoogleFonts.aBeeZee(
+                            fontSize: 13,
+                            fontWeight: FontWeight.w600
+                        ),
+                        ),
                               ],
                             ),
                           ],
                         )
                       ],
                      ),
+                     const SizedBox(height: 14,),
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Container(
                       margin: EdgeInsets.only(left: 1),
                       child: Text('Overview', style: GoogleFonts.aBeeZee(
-                        fontSize: 16,
+                        fontSize: 20,
+                        fontWeight: FontWeight.w600,
                         backgroundColor: Colors.transparent
                       ),
                       ),
@@ -211,7 +277,7 @@ class Home extends StatelessWidget {
                                 ),
                               ),
                              );
-                      }
+                      },
                       ),
                     )
                   ],
