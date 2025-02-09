@@ -53,7 +53,7 @@ class Home extends StatelessWidget {
           child: Column(
               children: [
                 Container(
-                  height: 350,
+                  height: 300,
                   color: const Color.fromARGB(255, 1, 51, 3),
                   child: Container(
                     margin: EdgeInsets.only(top: 46),
@@ -110,25 +110,45 @@ class Home extends StatelessWidget {
                   ),  
                 ),
                 const SizedBox(height: 4),
-                //  Column(
-                    //   crossAxisAlignment: CrossAxisAlignment.start,
-                    //   children: [
-                    //     Text('Quick Actions'),
-                    //     Row(
-                    //       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                    //       children: [
-                    //         Column(
-                    //           children: [
-                    //             CircleAvatar(
-                    //               backgroundColor: const Color.fromARGB(255, 1, 51, 3),
-                    //               child: Icon(Icons.add, color: Colors.white,),
-                    //             )
-                    //           ],
-                    //         )
-                    //       ],
-                    //     )
-                    //   ],
-                    //  ),
+                 Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text('Quick Actions'),
+                        const SizedBox(height: 5),
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                          children: [
+                            Column(
+                              children: [
+                                CircleAvatar(
+                                  backgroundColor: const Color.fromARGB(255, 1, 51, 3),
+                                  child: Icon(Icons.add, color: Colors.white,),
+                                ),
+                                Text('Add Products'),
+                              ],
+                            ),
+                            Column(
+                              children: [
+                                CircleAvatar(
+                                  backgroundColor: const Color.fromARGB(255, 1, 51, 3),
+                                  child: Icon(Icons.add, color: Colors.white,),
+                                ),
+                                Text('Add Products'),
+                              ],
+                            ),
+                            Column(
+                              children: [
+                                CircleAvatar(
+                                  backgroundColor: const Color.fromARGB(255, 1, 51, 3),
+                                  child: Icon(Icons.add, color: Colors.white,),
+                                ),
+                                Text('Add Products'),
+                              ],
+                            ),
+                          ],
+                        )
+                      ],
+                     ),
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -197,6 +217,9 @@ class Home extends StatelessWidget {
                 ),
               ],
           ),
+       ),
+       bottomNavigationBar: BottomAppBar(
+        
        ),
       ),
     );
