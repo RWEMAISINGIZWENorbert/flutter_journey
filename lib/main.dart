@@ -4,6 +4,7 @@ import 'package:flutter_journey/navigationWidgets/bottom_nav_block.dart';
 import 'package:flutter_journey/navigationWidgets/convex_bottom_bar.dart';
 import 'package:flutter_journey/navigationWidgets/silver_app_bar.dart';
 import 'package:flutter_journey/pages/Home.dart';
+import 'package:flutter_journey/pages/Products.dart';
 // import 'package:flutter_journey/navigationWidgets/widgets.dart';
 
 // void main() {
@@ -67,7 +68,8 @@ void main(){
   // runApp(const BottomNav());
   // runApp(const ConvexBottomBar());
   // runApp(const BottomNavBlock());
-  runApp(const Home());
+  // runApp(const Home());
+  runApp(const Products());
 }
 
 class MyApp extends StatelessWidget {
