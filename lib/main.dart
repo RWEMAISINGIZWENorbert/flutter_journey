@@ -108,6 +108,9 @@ class MyApp extends StatelessWidget {
  Widget build(BuildContext context){
     return MaterialApp(
       debugShowCheckedModeBanner: false,
+      // routes: {
+      //   '/home': (context) => const Home(),
+      // },
        home: Scaffold(
         backgroundColor: Colors.white,
          appBar: AppBar(
